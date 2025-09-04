@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tapahtumahubi</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Tapahtumahubi</h1>
+    <nav aria-label="Päävalikko">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="tapahtumat.html">Tapahtumat</a></li>
+        <li><a href="ilmoittaudu.html">Ilmoittautumislomake</a></li>
+        <li><a href="galleria.html">Galleriaan</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="form-wrapper">
+      <form action="#" method="post">
+        <label for="name">Nimi</label>
+        <input id="name" type="text" required />
+        <label for="email">Sähköposti</label>
+        <input id="email" type="email" required />
+        <label for="event">Valitse tapahtumat (Ctrl pohjassa - Valitse useamman):</label>
+        <select id="event" multiple size="2">
+          <option value="kitarariffit">Kitarariffit</option>
+          <option value="trubaduuri">Trubaduuri + Meet n Greet</option>
+        </select>
+        <label for="message">Toiveesi</label>
+        <textarea id="message" rows="3" cols="25" placeholder="Esitä toiveesi..."></textarea>
+        <button type="submit">Ilmoittaudu</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+     <p>&copy; 2025</p>
+  </footer>
+</body>
+</html>
